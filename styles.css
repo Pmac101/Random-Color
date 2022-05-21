@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #676279;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: black;
+    color:gray;
+}
+
+.nav-name h2 {
+    margin: 0;
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-social .social_linkedin {
+    padding: 0 1px 0 4px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45vh;
+}
+
+.container h2 {
+    margin-bottom: 50px;
+    font-family: serif;
+    color: white;
+}
+
+/********** Button **********/
+.button {
+    background: none;
+    outline: none;
+    display: block;
+    border: 3px solid white;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-family: serif;
+}
+
+.button:hover {
+    animation: shake 0.6s infinite;
+}
+
+/* button shake */
+@keyframes shake {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+
+    75% {
+        transform: translate(2px, -1px) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(-1px, 1px) rotate(-1deg);
+    }
+}
